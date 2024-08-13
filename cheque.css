@@ -1,0 +1,286 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px;
+}
+
+.cheque {
+  height: 54vh;
+  width: 72vw;
+  background-color: skyblue;
+  padding: 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+}
+.cheque:hover {
+  transition: all 2190ms;
+  transform: translateY(18px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.cheque .topbar {
+  height: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  justify-content: space-between;
+  background-color: rgba(190, 224, 237, 0.825);
+  font-family: "Poppins", sans-serif;
+}
+.cheque .topbar .bankdetails {
+  height: 12%;
+  width: 36%;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  gap: 18px;
+}
+.cheque .topbar .bankdetails .logo {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  padding: 9px;
+  border-radius: 50px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 900;
+  border: 3px solid black;
+  box-shadow: rgba(3, 113, 239, 0.512) 0px 0px 0px 3px;
+}
+.cheque .topbar .bankdetails .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: 630;
+}
+.cheque .topbar .bankdetails .name span:nth-child(1) {
+  color: rgba(12, 26, 113, 0.995);
+}
+.cheque .topbar .bankdetails .name span:nth-child(2) {
+  font-size: 0.6rem;
+}
+.cheque .date {
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  gap: 3px;
+  font-family: "Poppins", sans-serif;
+}
+.cheque .date .df {
+  padding: 3px 6px;
+  border: 2px solid black;
+}
+.cheque .date .df span h6 {
+  font-size: 0.9rem;
+  transform: translateY(27px);
+  font-weight: 459;
+}
+.cheque .content {
+  height: 64%;
+  width: 100%;
+  padding: 18px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.cheque .content .valid {
+  position: absolute;
+  top: -5.4%;
+  left: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  font-weight: 810;
+}
+.cheque .content .pay {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  top: 14.4%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  z-index: 1;
+  background-color: skyblue;
+}
+.cheque .content .orbearer {
+  position: absolute;
+  height: 9%;
+  width: 12%;
+  top: 14.4%;
+  right: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  z-index: 1;
+  background-color: skyblue;
+}
+.cheque .content .ruppes {
+  position: absolute;
+  height: 27%;
+  width: 12%;
+  top: 30.6%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  z-index: 1;
+  align-items: start;
+  background-color: skyblue;
+}
+.cheque .content .amount {
+  position: absolute;
+  top: 32.2%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  height: 27.2%;
+  width: 30.6%;
+  padding: 9px 6px;
+  background-color: skyblue;
+}
+.cheque .content .amount .rs {
+  height: 100%;
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  justify-content: flex-start;
+  align-items: end;
+  padding: 6px;
+  background-color: skyblue;
+  border: 3px solid black;
+}
+.cheque .content .lines {
+  height: 18.27%;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+.cheque .content .accountnumber {
+  position: absolute;
+  top: 61.2%;
+  left: 5.4%;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  width: 31.5%;
+}
+.cheque .content .accountnumber > span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  justify-content: flex-start;
+  padding: 3px;
+  border: 3px solid black;
+}
+.cheque .content .signature {
+  height: 27%;
+  width: 27%;
+  position: absolute;
+  top: 72.72%;
+  left: 73.71%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  flex-direction: column;
+  justify-content: end;
+}
+.cheque .content .signature span:nth-child(1) {
+  letter-spacing: 1px;
+  font-weight: 720;
+  font-size: 0.9rem;
+}
+.cheque .content .signature span:nth-child(2) {
+  font-size: 0.6rem;
+}
+.cheque .bottombar {
+  height: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: capitalize;
+  gap: 21px;
+  letter-spacing: 0.1 0.8rem;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 100;
+  font-size: 0.81rem;
+  background-color: rgba(190, 224, 237, 0.825);
+}/*# sourceMappingURL=cheque.css.map */
